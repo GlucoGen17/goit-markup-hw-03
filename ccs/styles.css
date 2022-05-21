@@ -1,0 +1,262 @@
+/* кольори */
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --white-text-color: #ffffff;
+  --accent-color: #2196f3;
+
+
+  --white-background-color: #ffffff;
+  --cap-background-color: #2f303a;
+  --team-background-color: #f5f4fa;
+}
+
+body {
+  font-family: "Roboto",
+    sans-serif;
+  background-color: var(--white-background-color);
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/*-------------------Header-----------------*/
+.header {
+  background-color: var(--white-background-color);
+}
+
+.header-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+
+.header-logo-studio {
+  color: #000000;
+}
+
+/* -------------------Навигация--------------------- */
+
+
+.header-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.header-link-studio {
+  color: var(--accent-color);
+}
+
+.header-link-studio:hover,
+.header-link-studio:focus {
+  color: var(--primary-text-color);
+}
+
+.header-link,
+.header-link:hover,
+.header-link:focus {
+  color: var(--primary-text-color);
+}
+
+.header-contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.header-contact-mail,
+.header-contact-mail:hover,
+.header-contact-mail:focus {
+  color: #757575;
+}
+
+.header-contact-tel,
+.header-contact-tel:hover,
+.header-contact-tel:focus {
+  color: var(--secondary-text-color);
+}
+
+
+/* -----------------------Основной контент------------------ */
+
+/* ----------------------Hero--------------------------- */
+
+.hero {
+  background-color: var(--cap-background-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+
+.hero-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  cursor: pointer;
+  color: var(--white-text-color);
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--white-text-color);
+  background: #188CE8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* ----------------------Особености--------------------------- */
+
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+
+.features-text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+}
+
+/* ----------------------Чем мы занимаемся--------------------------- */
+
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+/* ----------------------Наша команда--------------------------- */
+.team-section {
+  background: var(--team-background-color);
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+.team-worker {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+.team-profesion {
+  line-height: 1.19;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+/* ----------------------Footer--------------------------- */
+
+.foorer {
+  background-color: var(--cap-background-color);
+}
+
+.foorer-logo {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+
+.foorer-logo-studio {
+  color: var(--white-text-color);
+}
+
+.foorer-list {
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.foorer-contact-aderess {
+  color: var(--white-text-color);
+}
+
+.foorer-contact-mail {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.foorer-contact-tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ----------------------portfolio--------------------------- */
+
+/* -----------------------Header------------------------- */
+.header-link-portfolio {
+  color: var(--accent-color);
+}
+
+.header-portfolio-mail {
+  color: var(--secondary-text-color);
+}
+
+/* -----------------------Filtr------------------------- */
+
+.filters-btn,
+.filters-btn:hover,
+.filters-btn:focus {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  cursor: pointer;
+  background: var(--team-background-color);
+  border-radius: 4px;
+  color: var(--primary-text-color);
+  border: none;
+}
+
+.filters-btn-all {
+  color: var(--white-text-color);
+  background: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+/* -----------------------Projects------------------------- */
+
+.projects-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.projects-text {
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
