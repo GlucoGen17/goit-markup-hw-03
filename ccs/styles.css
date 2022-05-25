@@ -11,6 +11,7 @@
   --team-background-color: #f5f4fa;
 }
 
+/* база body */
 body {
   font-family: "Roboto",
     sans-serif;
@@ -18,17 +19,59 @@ body {
   color: var(--primary-text-color);
 }
 
-.list {
-  list-style: none;
+/* сктдання відступів */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
 }
 
+/* налаштування кнопки */
+button {
+  cursor: pointer;
+}
+
+/* налаштування картинок */
+img {
+  display: block;
+}
+
+/* прибираю крапки листів */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* прибираю підкреслювання */
 .link {
   text-decoration: none;
+}
+
+/* налаштування контейнера */
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
 }
 
 /*-------------------Header-----------------*/
 .header {
   background-color: var(--white-background-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
 }
 
 .header-logo {
@@ -37,6 +80,9 @@ body {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
+  outline: 2px solid red;
+  align-items: center;
+  text-align: center;
 }
 
 .header-logo-studio {
@@ -45,32 +91,50 @@ body {
 
 /* -------------------Навигация--------------------- */
 
+.header-nav {
+  display: flex;
+}
 
 .header-list {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+
+  outline: 2px solid red;
 }
 
-.header-link-studio {
-  color: var(--accent-color);
-}
-
-.header-link-studio:hover,
-.header-link-studio:focus {
-  color: var(--primary-text-color);
+.header-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-link,
 .header-link:hover,
 .header-link:focus {
   color: var(--primary-text-color);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.current {
+  color: var(--accent-color);
 }
 
 .header-contact {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+
+  display: flex;
+  margin: auto;
+}
+
+.header-contact-item:not(:first-child) {
+  margin-left: 50px;
 }
 
 .header-contact-mail,
@@ -92,6 +156,9 @@ body {
 
 .hero {
   background-color: var(--cap-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 
 .hero-title {
@@ -101,6 +168,10 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: var(--white-text-color);
+
+  margin-bottom: 30px;
+  margin: 0 auto;
+  max-width: 696px;
 }
 
 .hero-btn {
@@ -113,6 +184,11 @@ body {
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 32px;
+
 }
 
 .hero-btn:hover,
@@ -125,12 +201,31 @@ body {
 
 /* ----------------------Особености--------------------------- */
 
+.features-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-item {
+  max-width: 270px;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-text-color);
+
+  margin-bottom: 10px;
 }
 
 .features-text {
@@ -141,6 +236,10 @@ body {
 
 /* ----------------------Чем мы занимаемся--------------------------- */
 
+.work-section {
+  padding-bottom: 94px;
+}
+
 .work-title {
   font-weight: 700;
   font-size: 36px;
@@ -149,9 +248,35 @@ body {
   color: var(--primary-text-color);
 }
 
+.work-list {
+  display: flex;
+}
+
+.work-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.work-title {
+  margin-bottom: 50px;
+}
+
+
 /* ----------------------Наша команда--------------------------- */
 .team-section {
   background: var(--team-background-color);
+
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+
+.team-list {
+  display: flex;
+
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-title {
@@ -174,55 +299,74 @@ body {
   line-height: 1.19;
   text-align: center;
   color: var(--secondary-text-color);
+
+  margin-top: 10px;
+}
+
+.team-worker-grup {
+  padding: 30px 0px;
 }
 
 /* ----------------------Footer--------------------------- */
 
-.foorer {
+.footer {
   background-color: var(--cap-background-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.foorer-logo {
+.footer-logo {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
 }
 
-.foorer-logo-studio {
+.footer-logo-studio {
   color: var(--white-text-color);
 }
 
-.foorer-list {
+.footer-list {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+
+  margin-top: 20px;
 }
 
-.foorer-contact-aderess {
+.footer-item {
+  margin-top: 9px;
+}
+
+.footer-contact-aderess {
   color: var(--white-text-color);
 }
 
-.foorer-contact-mail {
+.footer-contact-mail {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.foorer-contact-tel {
+.footer-contact-tel {
   color: rgba(255, 255, 255, 0.6);
 }
 
 /* ----------------------portfolio--------------------------- */
 
 /* -----------------------Header------------------------- */
-.header-link-portfolio {
-  color: var(--accent-color);
-}
-
-.header-portfolio-mail {
-  color: var(--secondary-text-color);
-}
 
 /* -----------------------Filtr------------------------- */
+
+.projects {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.filters-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 
 .filters-btn,
 .filters-btn:hover,
@@ -236,6 +380,7 @@ body {
   border-radius: 4px;
   color: var(--primary-text-color);
   border: none;
+  padding: 6px 22px;
 }
 
 .filters-btn-all {
@@ -246,6 +391,21 @@ body {
 }
 
 /* -----------------------Projects------------------------- */
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects-item {
+  margin: 15px;
+}
+
+.projects-border {
+  border: 1px solid #EEEEEE;
+  border-top: transparent;
+  padding: 20px 24px;
+}
 
 .projects-title {
   font-weight: 700;
@@ -259,4 +419,6 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+
+  margin-top: 4px;
 }
