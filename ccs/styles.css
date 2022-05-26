@@ -57,9 +57,21 @@ ol {
 /* налаштування контейнера */
 .container {
   width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-  outline: 2px solid red;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+  /* outline: 2px solid red; */
+}
+
+.section {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /*-------------------Header-----------------*/
@@ -80,9 +92,11 @@ ol {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
-  outline: 2px solid red;
+
   align-items: center;
   text-align: center;
+
+  /* outline: 2px solid red; */
 }
 
 .header-logo-studio {
@@ -104,7 +118,7 @@ ol {
   align-items: center;
   margin-left: 93px;
 
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 .header-item:not(:last-child) {
@@ -131,6 +145,11 @@ ol {
 
   display: flex;
   margin: auto;
+
+  /* 331-50-50. знайти як вірно */
+  margin-left: 231px;
+
+  /* outline: 2px solid red; */
 }
 
 .header-contact-item:not(:first-child) {
@@ -170,7 +189,8 @@ ol {
   color: var(--white-text-color);
 
   margin-bottom: 30px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   max-width: 696px;
 }
 
@@ -395,11 +415,19 @@ ol {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: 20px;
 }
 
 .projects-item {
-  margin: 15px;
+  margin-top: 30px;
+  margin-left: 30px;
+
 }
+
+/* .projects-item:nth-child(an+1){
+  margin-right: -30px;
+} */
 
 .projects-border {
   border: 1px solid #EEEEEE;
