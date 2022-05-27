@@ -346,6 +346,8 @@ ol {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-logo-studio {
@@ -356,7 +358,7 @@ ol {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .footer-item:nth-child(n + 2) {
@@ -406,6 +408,15 @@ ol {
   border: none;
   padding: 6px 22px;
 }
+
+/* .filters-btn:not(:last-child) {
+  margin-right: 8px;
+} */
+
+.filters-btn:nth-child(-n+3) {
+  margin-right: 8px;
+}
+
 
 .filters-btn-all {
   color: var(--white-text-color);
